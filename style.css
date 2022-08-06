@@ -12,32 +12,41 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(#9cebfc,#6ae1fb);
+    background: linear-gradient(#b8e8f3,#bff3ff);
 }
 
 .center{
-    width: 350px;
-    background: black;
+    width: 100%;
+    max-width: 350px;
+    background: #b4b3c9;
     border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0px 1px 5px 0px #222222f0;
+}
+
+form{
+    width: 100%;
 }
 
 input[type="text"]{
     height: 60px;
-    width: 300px;
+    width: 90%;
     margin-top: 40px;
     border-radius: 1px;
-    border: 1px solid #e1e7ea;
     color: black;
     font-size: 22px;
     font-weight: bold;
     text-align: right;
     padding-right: 20px;
-    background: linear-gradient(#d1dce0, #dfe6e9);
+    background-image: linear-gradient(to left, #DDE0CB, #bebfb8);
+    text-shadow: 0px 0px 2px grey;
 }
 form .buttons{
-    width: 300px;
-    margin: 10px 25px 0 25px;
+    width: 100%;
     padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 input[type="button"]{
@@ -49,11 +58,22 @@ input[type="button"]{
     border-radius: 3px;
     border: 1px solid #d9d9d9;
     background: linear-gradient(#d9d9d9, #bfbfbf);
+    flex: 0 1 20%;
+    box-shadow: 0px 1px 2px 2px grey;
+}
+
+#equal{
+    flex-basis: 90%;
 }
 
 input[type="button"]:hover{
     transition: .5s;
     background: linear-gradient(#bfbfbf, #d9d9d9);
+}
+
+input[type="button"]:active{
+    box-shadow: 0px 1px 1px 1px grey;
+    transform: translateY(2px);
 }
 
 input#clear{
@@ -62,11 +82,11 @@ input#clear{
     color: white;
 }
 
-input#equal{
+
+input#equal {
     width: 275px;
-    margin: 10px 0 10px 0;
+    margin: 10 px 0 10px0;
     font-size: 30px;
     color: white;
-    background: #ff3d00;
-    border: 1px solid #b32a00;
+    background: #36ff74;
 }
